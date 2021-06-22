@@ -1,8 +1,11 @@
-version = 0.1 # version number
+version = 0.0 # version number
 
 def interpret(string):
 	for element in string:
-		element == 'h' if print('h', end='') else print('', end='')
+		if element == 'h':
+			print('h', end='')
+		elif element != 'h':
+			print('', end='')
 	getInp()
 
 def getInp():
